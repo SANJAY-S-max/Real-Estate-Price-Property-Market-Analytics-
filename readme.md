@@ -1,5 +1,6 @@
 # Real Estate Price & Property Market Analytics
 
+![Dashboard Preview](dashboard_screenshot.png)
 ## Objective
 The primary objective of this project is to analyze property prices across various Indian cities and build a Machine Learning model to answer the core business question: **"What is the expected market price of a property?"**
 
@@ -33,16 +34,18 @@ Aggregated data queries to extract actionable insights. The results of these que
 - **Results:** The model successfully achieved an **R-squared accuracy of 0.9176**, demonstrating a very strong ability to predict real estate prices based on property features.
 - **Model Output:** The trained pipeline is saved as `house_price_model.pkl` for immediate deployment and inference without needing to retrain.
 
-### 4. Power BI Dashboard Data Prep (`powerbi_guide.md`)
-The finalized dataset and SQL outputs are primed for Power BI ingestion. 
-- **Real-estate market dashboard:** To be built utilizing the `PropertyData` sheet within `real_estate_dataset.xlsx`.
-- **Location-wise pricing & Property trends:** Recommended visualizations detailed in the included guide.
+### 4. Power BI Dashboard (`Real_Estate_Dashboard.pbix`)
+The finalized dataset and SQL outputs were ingested into Power BI to create a fully interactive analytics dashboard.
+- **Real-estate market dashboard:** Features dynamic visuals mapping price across cities, volume by property types, and a scatter plot revealing price-per-square-foot trends.
+- **Key Performance Indicators (KPIs):** High-level summary metrics for stakeholders.
+- **Interactivity:** Slicers implemented to allow drill-down analysis by Location and Property Type.
 
 ## Repository Contents
 - `real_estate_dataset.xlsx`: The master dataset containing raw data and SQL output tabs.
-- `sql_analysis.sql`: The queries used for data aggregation.
+- `sql_analysis.sql`: The SQL queries used for data aggregation.
 - `house_price_prediction.py`: The Python script for EDA and ML training.
-- `house_price_model.pkl`: The exported Machine Learning model.
-- `price_distribution.png`: Histogram visualization of property prices.
-- `powerbi_guide.md`: Step-by-step instructions for building the Power BI dashboard.
-- `task.txt`: Project checklist.
+- `house_price_model.pkl`: The exported, trained Machine Learning model.
+- `price_distribution.png`: Histogram visualization of property prices (EDA output).
+- `Real_Estate_DashBoard.pbix`: The final interactive Power BI dashboard.
+- `dashboard_screenshot.png`: A visual snapshot of the completed Power BI dashboard.
+- `readme.md`: Project documentation and overview.
